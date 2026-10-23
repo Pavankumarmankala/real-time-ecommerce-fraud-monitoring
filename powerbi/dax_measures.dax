@@ -1,0 +1,22 @@
+// DAX measures for transactions_scored
+
+Total Transactions = COUNTROWS ( transactions_scored )
+
+Flagged Transactions =
+CALCULATE ( [Total Transactions], transactions_scored[is_flagged] = 1 )
+
+Flag Rate % =
+DIVIDE ( [Flagged Transactions], [Total Transactions] ) * 100
+
+High Risk Transactions =
+CALCULATE ( [Total Transactions], transactions_scored[risk_tier] = "high" )
+
+Revenue at Risk =
+CALCULATE (
+    SUM ( transactions_scored[amount] ),
+    transactions_scored[risk_tier] = "high"
+)
+
+Total Revenue Monitored = SUM ( transactions_scored[amount] )
+
+Avg Risk Score = AVERAGE ( transactions_scored[risk_score] )

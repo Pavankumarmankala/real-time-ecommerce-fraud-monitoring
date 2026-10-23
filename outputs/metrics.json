@@ -1,0 +1,21 @@
+{
+  "fraud_incidents_truth": 220,
+  "fraud_incidents_detected": 219,
+  "incident_recall_pct": 99.55,
+  "transactions_processed": 100670,
+  "customers": 2000,
+  "days_covered": 7,
+  "total_revenue_monitored": 4483271.74,
+  "fraud_transactions_truth": 670,
+  "flagged_transactions": 421,
+  "flagged_rate_pct": 0.42,
+  "high_risk_transactions": 33,
+  "medium_risk_transactions": 388,
+  "precision_pct": 96.44,
+  "recall_pct": 60.6,
+  "true_positives": 406,
+  "false_positives": 15,
+  "false_negatives": 264,
+  "pipeline_runtime_seconds": 3.72,
+  "throughput_txn_per_sec": 27061.8
+}

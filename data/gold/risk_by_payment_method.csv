@@ -1,0 +1,6 @@
+payment_method,transactions,flagged,fraud_truth
+apple_pay,9970,1,0
+credit_card,45735,416,670
+debit_card,24831,3,0
+gift_card,4937,0,0
+paypal,15197,1,0
